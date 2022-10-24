@@ -1,0 +1,124 @@
+/* GLOBALES */
+:root {
+  --fuente-principal: "Raleway", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+header {
+  background-color: black;
+  height: 73px;
+}
+header h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: var(--fuente-principal);
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 73px;
+  margin: auto;
+}
+/* MAIN */
+.main_bg {
+  height: 727px;
+  width: 100%;
+  background-image: url("../img/bg-header.jpg");
+  background-size: cover;
+}
+.info {
+  height: 348px;
+  background-color: black;
+}
+.info__contenido {
+  padding: 45px 150px 0px;
+}
+.info img {
+  height: 237px;
+  width: 399px;
+  float: right;
+}
+.info p {
+  color: aliceblue;
+  width: 49%;
+  margin-top: 40px;
+  font-family: var(--fuente-principal);
+  font-weight: 300;
+}
+/* Seccion 'Caracteristicas' */
+.caracteristicas {
+  background-color: #1e1a13;
+  height: 348px;
+  text-align: center;
+  margin-bottom: 0;
+  padding: 0px 150px;
+  color: white;
+}
+.caracteristicas h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-family: var(--fuente-principal);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-top: 75px;
+  margin: 0 0 60px 0;
+}
+.caracteristica {
+  display: inline-block;
+  width: 30%; /* para dividir la seccion en tres debemos estbalecer cada una en 30% */
+  padding: 2px;
+  font-family: var(--fuente-principal);
+  font-size: 25px;
+  font-weight: 200;
+}
+.caracteristica i{
+  display: block;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+/* Galeria */
+.galeria {
+  background-color: black;
+  height: 348px;
+  text-align: center;
+}
+.galeria__contenido {
+  padding: 73px 150px;
+}
+.galeria img {
+  margin: 0 10px;
+  height: 202px;
+  max-width: 316px;
+  width: 30%;
+}
+/* Utilizando float: No lo haremos de esta forma por que al reducir mucho la resolucion de la pantalla las imagenes cambian de posicion perjudicando la experiencia del usuario, ademas de que es dificil y relativo (de acuerdo a la pantalla) centrar elementos float. 
+.galeria__imagenes{
+    padding: 73px 150px 73px 280px;
+    overflow: auto;
+}
+.galeria img{
+    float: left;
+    width: 33%;
+    margin: 10px;
+    height: 202px;
+    max-width: 316px;
+}
+/* Footer */
+footer {
+  height: 102px;
+  background-color: #1e1a13;
+}
+footer p {
+  color: white;
+  font-family: var(--fuente-principal);
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+  line-height: 102px;
+}
+/*Notas al pie de página
+-No quise establecer el width de la pagina en 1280px como esta aestablecido en la 'maqueta' ya que no se podria apreciar bien en pantallas de resolucion diferente
+*/
